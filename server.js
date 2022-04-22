@@ -19,8 +19,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 require('./controllers/posts')(app);
-
 require('./data/reddit-db');
+require('./controllers/comments.js')(app);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
