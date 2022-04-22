@@ -3,8 +3,12 @@ const Post = require('../models/post');
 module.exports = (app) => {
 
     app.get('/', (req, res) => {
-        res.render('home');
-    });
+        Post.find({}).lean()
+            .then((posts) => res.render('posts-index', { posts }))
+            .catch((err) => {
+                console.log(err.message);
+            })
+    })
 
     app.get('/posts/new', (req, res) => {
         res.render('posts-new');
