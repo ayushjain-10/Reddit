@@ -1,8 +1,11 @@
+require('dotenv').config(); 
 const express = require('express')
+const cookieParser = require('cookie-parser');
 const app = express()
 
 const {engine} = require('express-handlebars');
 
+app.use(cookieParser());
 app.engine('handlebars', engine({
     defaultLayout: 'main',
     helpers: {
@@ -21,6 +24,7 @@ app.use(express.urlencoded({extended: false}));
 require('./controllers/posts')(app);
 require('./data/reddit-db');
 require('./controllers/comments.js')(app);
+require('./controllers/auth.js')(app);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
