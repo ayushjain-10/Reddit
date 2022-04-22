@@ -22,6 +22,7 @@ app.engine('handlebars', engine({
 app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.use(express.static('public'));
 
 require('./controllers/posts')(app);
 require('./data/reddit-db');
