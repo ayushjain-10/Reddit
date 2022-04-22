@@ -10,8 +10,7 @@
             </div>
         </form>
         {{#each post.comments}}
-        <p>{{this.content}}</p>
-        <p class="text-end"><small>{{this.author.username}}</small></p>
+            {{> comment comment=this postId=../post._id}}
         {{/each}}
     </div>
 </div>

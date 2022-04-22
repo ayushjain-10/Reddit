@@ -27,6 +27,7 @@ require('./controllers/posts')(app);
 require('./data/reddit-db');
 require('./controllers/comments.js')(app);
 require('./controllers/auth.js')(app);
+require('./controllers/replies.js')(app);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
