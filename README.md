@@ -1,6 +1,6 @@
 # Reddit-Clone
 
-This is a simple Reddit clone built with node.js and mongoDB.
+This is a simple Reddit clone built with node.js, express and mongoDB.
 
 ## Installation
 
@@ -11,9 +11,8 @@ This is a simple Reddit clone built with node.js and mongoDB.
     $ npm init
     $ npm install
     ```
-3. Add a connection for the mongoDB database in /data/reddit-db.js
 
-4. Start the server
+3. Start the server
     
     ```bash
     $ nodemon
