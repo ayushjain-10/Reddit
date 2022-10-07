@@ -2,7 +2,7 @@
 
 This is a simple Reddit clone built with node.js, express and mongoDB.
 
-## Installation
+## Installation - Option 1
 
 1. Clone the repo
 
@@ -16,4 +16,13 @@ This is a simple Reddit clone built with node.js, express and mongoDB.
     
     ```bash
     $ nodemon
+    ```
+
+## Installation - Option 2
+
+1. Clone the repo
+
+2. Run the docker-compose file
+    ```
+    $ docker-compose up
     ```
