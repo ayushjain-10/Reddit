@@ -18,6 +18,8 @@ This is a simple Reddit clone built with node.js, express and mongoDB.
     $ nodemon
     ```
 
+4. Open localhost:3000
+
 ## Installation - Option 2
 
 1. Clone the repo
@@ -26,3 +28,4 @@ This is a simple Reddit clone built with node.js, express and mongoDB.
     ```
     $ docker-compose up
     ```
+3. Open localhost:3000
