@@ -10,7 +10,17 @@ http://reddit.dev.ayushjain-10.me/
 
 https://statuspage.freshping.io/63371-AyushJain
 
-## Installation - Option 1
+## Installation - Dockerfile (Recommended)
+
+1. Clone the repo
+
+2. Run the docker-compose file
+    ```
+    $ docker-compose up
+    ```
+3. Open localhost:3000
+
+## Installation - Manually
 
 1. Clone the repo
 
@@ -27,13 +37,3 @@ https://statuspage.freshping.io/63371-AyushJain
     ```
 
 4. Open localhost:3000
-
-## Installation - Option 2
-
-1. Clone the repo
-
-2. Run the docker-compose file
-    ```
-    $ docker-compose up
-    ```
-3. Open localhost:3000
