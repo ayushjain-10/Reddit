@@ -1,0 +1,9 @@
+version: “3.8”
+services:
+  reddit-clone: 
+    image: "mongo"
+
+  expressapi:
+    build: .
+    ports:
+      - "3000:3000"
