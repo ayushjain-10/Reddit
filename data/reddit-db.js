@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 assert = require('assert');
 
-const url = "mongodb+srv://ayush10:$Ayushjain10@reddit-clone.rguwu.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.MONGODB_URI
 mongoose.connect(
   url,
   {
