@@ -13,7 +13,8 @@ mongoose.connect(
     console.log('Connected successfully to database');
 
     // db.close(); turn on for testing
-  }
+  },
+  // { useMongoClient: true }
 );
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection Error:'));
 mongoose.set('debug', true);
