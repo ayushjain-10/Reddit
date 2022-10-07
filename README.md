@@ -2,6 +2,14 @@
 
 This is a simple Reddit clone built with node.js, express and mongoDB.
 
+## Live Link on Caprover
+
+http://reddit.dev.ayushjain-10.me/
+
+## Status
+
+https://statuspage.freshping.io/63371-AyushJain
+
 ## Installation - Option 1
 
 1. Clone the repo
