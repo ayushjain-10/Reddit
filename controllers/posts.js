@@ -71,6 +71,7 @@ module.exports = (app) => {
 
             return res.status(200);
         }).catch(err => {
+            console.log("VoteUp Error");
             console.log(err);
         })
     });
@@ -83,8 +84,19 @@ module.exports = (app) => {
 
             return res.status(200);
         }).catch(err => {
+            console.log("VoteDown Error");
             console.log(err);
         });
     });
+    // SHOW the votescore
+    // app.get('/posts/:id/vote-score', (req, res) => {
+    //     Post.findById(req.params.id).then(post => {
+    //         post.voteScore = post.upVotes.length - post.downVotes.length;
+    //         post.save();
+    //         return res.status(200);
+    //     }).catch(err => {
+    //         console.log(err);
+    //     });
+    // });
 
 };
