@@ -1,6 +1,34 @@
 {
-    "version": 2,
-    "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/(.*)", "dest": "server.js" }]
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+        {
+          "src": "/api/comments(.*)",
+          "dest": "./controllers/comments.js"
+        },
+        {
+          "src": "/api/posts(.*)",
+          "dest": "./controllers/posts.js"
+        },
+        {
+          "src": "/api/auth(.*)",
+          "dest": "./controllers/auth.js"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "./controllers/replies.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+          }
+      ],
+    "env": {
+      "MONGO_URI": "your-mongo-uri"
+    }
   }
   
